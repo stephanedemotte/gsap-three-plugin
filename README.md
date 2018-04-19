@@ -3,7 +3,7 @@ Based on GSAP PIXI Plugin https://github.com/noprotocol/gsap-pixi-plugin
 
 ```
 // js
-import 'ThreePlugin'
+import 'gsap-three-plugin'
 
 TweenLite.to(mesh, 1, {
   three: {
