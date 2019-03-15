@@ -69,19 +69,19 @@ _gsScope._gsDefine.plugin({
             this._addTween(target.scale, "z", target.scale.z, value, property)
             break
           case 'rotation':
-            this._addTween(target.rotation, "x", target.rotation.x, roRadians(value), "rotationX")
-            this._addTween(target.rotation, "y", target.rotation.y, roRadians(value), "rotationY")
-            this._addTween(target.rotation, "z", target.rotation.z, roRadians(value), "rotationZ")
+            this._addTween(target.rotation, "x", target.rotation.x, toRadians(value), "rotationX")
+            this._addTween(target.rotation, "y", target.rotation.y, toRadians(value), "rotationY")
+            this._addTween(target.rotation, "z", target.rotation.z, toRadians(value), "rotationZ")
             this._overwriteProps.push("rotationX", "rotationY", "rotationZ")
             break
           case 'rotationX':
-            this._addTween(target.rotation, "x", target.rotation.x, roRadians(value), property)
+            this._addTween(target.rotation, "x", target.rotation.x, toRadians(value), property)
             break
           case 'rotationY':
             this._addTween(target.rotation, "y", target.rotation.y, toRadians(value), property)
             break
           case 'rotationZ':
-            this._addTween(target.rotation, "z", target.rotation.z, roRadians(value), property)
+            this._addTween(target.rotation, "z", target.rotation.z, toRadians(value), property)
             break
           default:
             console.warn('Property "' + property + '" is not supported by the Three Plugin')
