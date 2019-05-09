@@ -87,7 +87,7 @@ _gsScope._gsDefine.plugin({
             console.warn('Property "' + property + '" is not supported by the Three Plugin')
         }
 
-        if(property != 'scale' && property != 'rotation' && property != 'color')
+        if(property !== 'scale' && property !== 'rotation' && property !== 'color')
           this._overwriteProps.push(property)
       }
       return true
